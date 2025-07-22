@@ -3,6 +3,10 @@ import LandingPage from './components/Pages/LandingPage';
 import NAV from './components/Pages/NAV';
 import Footer from './components/Pages/Footer';
 import FindTutor from './components/Pages/FindTutor';
+import Dashboard from './components/Pages/Dashboard';
+import MyAccountProfile from './components/Pages/MyAccountProfile';
+import Login from './components/Pages/Login';
+import Signup from './components/Pages/Signup';
 
 function App() {
   return (
@@ -11,12 +15,13 @@ function App() {
         <NAV />
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="/tutors" element={<FindTutor />} />
-          {/* Future role-based routing setup:
-            <Route path="/home" element={<Home />} />
-            <Route path="/find-tutor" element={<FindTutor />} />
-            <Route path="/profile" element={<Profile />} />
-          */}
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/profile" element={<MyAccountProfile />} />
+           
+          
         </Routes>
         <Footer/>
       </div>

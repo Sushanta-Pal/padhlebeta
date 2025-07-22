@@ -33,7 +33,7 @@ function NAV() {
 
   const navLinks = [
     { name: 'Find Tutors', path: '/tutors', icon: Search },
-    { name: 'Become a Tutor', path: '/become-tutor', icon: GraduationCap },
+    { name: 'Become a Tutor', path: '/login', icon: GraduationCap },
   ];
 
   return (
@@ -105,7 +105,7 @@ function NAV() {
                   <div className="absolute top-full right-0 mt-2 w-48 bg-white rounded-2xl shadow-2xl border border-gray-100 py-2 animate-in slide-in-from-top-2 duration-200">
                     <a href="/profile" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-colors">Profile</a>
                     <a href="/dashboard" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-colors">Dashboard</a>
-                    <a href="/settings" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-colors">Settings</a>
+                    <a href="/login" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-colors">Signup</a>
                     <hr className="my-2 border-gray-100" />
                     <button className="block w-full text-left px-4 py-2 text-red-600 hover:bg-red-50 transition-colors">Sign out</button>
                   </div>
@@ -113,7 +113,7 @@ function NAV() {
               </div>
 
               <a
-                href="/get-started"
+                href="/login"
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2.5 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center space-x-2"
               >
                 <span>Get Started</span>
